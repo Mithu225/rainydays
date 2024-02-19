@@ -12,7 +12,7 @@ function generateProductItemHTML(product, sizeHTML) {
         <div class="box">
           <div class="new-product-label">
             <p class="new-text-label">${product.onSale ? "SALE" : "NEW"}</p>
-            <img src="../assets/images/New.jpg" alt="New label">
+            <img src="assets/images/New.jpg" alt="New label">
           </div>
           <img src="${product.image.url}" alt="${
     product.image.alt
