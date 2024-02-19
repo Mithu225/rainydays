@@ -1,7 +1,7 @@
 function generateYourCartHTML(data) {
   var cartSelector = document.querySelector("table");
 
-  if (!data.length) {
+  if (!data || !data.length) {
     cartSelector.innerHTML = `<div class="cart-empty">Your cart is empty</div>`;
     return;
   }

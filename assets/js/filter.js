@@ -41,16 +41,16 @@ function applyFilter() {
   }
 }
 
+function genOptionHTML(values) {
+  return values
+    .map((item) => `<option value="${item}">${item}</option>`)
+    .join("");
+}
+
 async function renderFilter(callback) {
   reRenderComponent = callback;
   var genders = getValueFromStore(FILTER_GENDERS);
   var categories = getValueFromStore(FILTER_CATEGORIES);
-
-  function genOptionHTML(values) {
-    return values
-      .map((item) => `<option value="${item}">${item}</option>`)
-      .join("");
-  }
 
   var filterHTML = `
 		<form id="filter-form">
@@ -58,14 +58,14 @@ async function renderFilter(callback) {
 				<label for="gender">Gender:</label>
 				<select id="gender" name="gender">
 					<option value="">All</option>
-					${genOptionHTML(genders)}
+					${genders ? genOptionHTML(genders) : ""}
 				</select
 				</div>
 				<div class="form-group">
 				<label for="category">Category:</label>
 				<select id="category" name="category">
 					<option value="">All</option>
-					${genOptionHTML(categories)}
+					${categories ? genOptionHTML(categories) : ""}
 				</select>
 			</div>
 			<button type="button" class="button button-primary" onclick="applyFilter()">Apply Filters</button>

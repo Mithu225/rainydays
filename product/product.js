@@ -78,6 +78,7 @@ function generateProductDetailHTML(product, sizesHTML) {
               min="1"
               max=""
               name="quantity"
+              onchange="onChangeQuantityInput()"
             />
             <button class="quantity-btn" data-quantity-plus="" onclick="onIncrease()">
               <ion-icon size="large" name="add"></ion-icon>
@@ -100,15 +101,20 @@ function generateProductDetailHTML(product, sizesHTML) {
     </div>`;
 }
 
-async function renderProductDetail() {
-  beforeUnload(() => {
-    setValueToStore(STORAGE_SELECTED_PRODUCT_QUANTITY, 1);
-  });
+function onChangeQuantityInput() {
+  var quantitySelector = document.querySelector("#quantity-input");
 
+  setValueToStore(
+    STORAGE_SELECTED_PRODUCT_QUANTITY,
+    parseInt(quantitySelector.value)
+  );
+}
+
+async function renderProductDetail() {
   var productID = getValueFromStore(STORAGE_PRODUCTID);
 
   if (productID == undefined) {
-    window.location.href = BASE_URL + "/error.html";
+    window.location.href = BASE_URL + "/error";
     return;
   }
 
@@ -162,6 +168,9 @@ function onIncrease() {
 }
 
 (async function () {
+  beforeUnload(() => {
+    setValueToStore(STORAGE_SELECTED_PRODUCT_QUANTITY, 1);
+  });
   await renderHeader("product");
   await renderFooter();
   await renderProductDetail();

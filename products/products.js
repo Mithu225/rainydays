@@ -26,6 +26,6 @@ async function renderProducts(data) {
 (async function () {
   await renderHeader("products");
   await renderFooter();
-  await renderFilter(renderProducts);
   await renderProducts();
+  await renderFilter(renderProducts);
 })();
