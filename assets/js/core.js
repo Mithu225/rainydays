@@ -10,13 +10,12 @@ var CART_HEADER_SELECTOR_NAME = "#your-cart-number";
 var bodySelector = document.querySelector("body");
 var store = {};
 
-var BASE_URL = isLocalhost()
+var isLocalhost =
+  location.hostname === "localhost" || location.hostname === "127.0.0.1";
+
+var BASE_URL = isLocalhost
   ? ""
   : "https://mithu225.github.io/javascript1-THI-MINH-THU-HUYNH";
-
-function isLocalhost() {
-  return location.hostname === "localhost" || location.hostname === "127.0.0.1";
-}
 
 function renderLoading(isLoading) {
   if (isLoading) {
