@@ -1,5 +1,5 @@
 function generateOrderNumber() {
-  var randomNumber = Math.floor(Math.random() * 900) + 100;
+  var randomNumber = Math.floor(Math.random() * 9) + 100;
   var timestamp = Date.now();
   var orderNumber = "NOROFF-" + randomNumber + timestamp;
   return orderNumber;

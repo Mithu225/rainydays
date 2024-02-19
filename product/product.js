@@ -2,7 +2,7 @@ function onAddToCart(id) {
   var carts = getValueFromStore(STORAGE_CARTS) || [];
   var products = getValueFromStore(STORAGE_PRODUCTS) || [];
   var selectedProductQuantity = parseInt(
-    getValueFromStore(STORAGE_SELECTED_PRODUCT_QUANTITY)
+    getValueFromStore(STORAGE_SELECTED_PRODUCT_QUANTITY) || "1"
   );
   var currentproduct = products.find((item) => item.id === id);
 
