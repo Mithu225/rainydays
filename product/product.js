@@ -113,7 +113,7 @@ function onChangeQuantityInput() {
 async function renderProductDetail() {
   var productID = getValueFromStore(STORAGE_PRODUCTID);
 
-  if (productID == undefined) {
+  if (!productID) {
     window.location.href = BASE_URL + "/error";
     return;
   }
@@ -169,7 +169,8 @@ function onIncrease() {
 
 (async function () {
   beforeUnload(() => {
-    setValueToStore(STORAGE_SELECTED_PRODUCT_QUANTITY, 1);
+    deleteValueFromStore(STORAGE_PRODUCTID);
+    deleteValueFromStore(STORAGE_SELECTED_PRODUCT_QUANTITY);
   });
   await renderHeader("product");
   await renderFooter();

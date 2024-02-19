@@ -77,6 +77,18 @@ function renderCheckout() {
   generateYourCartHTML(data);
 }
 
+function onCheckout() {
+  var data = getValueFromStore(STORAGE_CARTS);
+  if (data && data.length) {
+    navigate("/checkout/info");
+  } else {
+    showToast(
+      `<p>Your cart is empty!</p> </p>Please add a new product to your cart to continue</p>`,
+      "error"
+    );
+  }
+}
+
 (async function () {
   await renderHeader("checkout");
   await renderFooter();

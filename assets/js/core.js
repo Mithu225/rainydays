@@ -67,6 +67,14 @@ async function setValueToStore(key, value) {
   });
 }
 
+async function deleteValueFromStore(key) {
+  return new Promise((resolve) => {
+    delete store[key];
+    localStorage.removeItem(key);
+    resolve(true);
+  });
+}
+
 function getValueFromStore(key) {
   return store[key] || parseString(localStorage.getItem(key));
 }
