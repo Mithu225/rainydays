@@ -34,12 +34,15 @@ function renderLoading(isLoading) {
 async function getAPI(url) {
   try {
     renderLoading(true);
-    var respone = await fetch(url);
-    var result = await respone.json();
+    var response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`${response.status} ${response.statusText}`);
+    }
+    var result = await response.json();
     renderLoading(false);
     return result;
   } catch (error) {
-    showToast(`Fetching is Error: ${error.message}`, "error");
+    showToast(`Fetching data is failed: ${error.message}`, "error");
   }
 }
 
