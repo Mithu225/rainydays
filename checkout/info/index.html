@@ -107,16 +107,20 @@
         </div>
 
         <div class="checkout-purchase">
-          <a href="/">
-            <button type="button" class="button button-error">
-              CONTINUE SHOPPING
-            </button></a
+          <button
+            type="button"
+            class="button button-error"
+            onclick="navigate('/')"
           >
-          <a href="/checkout/confirmation"
-            ><button type="button" class="button button-dark">
-              PURCHASE
-            </button></a
+            CONTINUE SHOPPING
+          </button>
+          <button
+            type="button"
+            class="button button-dark"
+            onclick="navigate('/checkout/confirmation')"
           >
+            PURCHASE
+          </button>
         </div>
       </form>
     </div>
