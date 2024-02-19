@@ -126,6 +126,17 @@ function beforeUnload(callback) {
   window.onbeforeunload = callback;
 }
 
+function checkCartDataBeforeEnter() {
+  return new Promise((resolve) => {
+    var data = getValueFromStore(STORAGE_CARTS);
+    if (!data || !data.length) {
+      navigate("/checkout");
+    } else {
+      resolve();
+    }
+  });
+}
+
 (function () {
   renderLoading(true);
   document.onreadystatechange = () => {

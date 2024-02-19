@@ -5,10 +5,6 @@ function getSelectedClass(name, selected) {
 async function renderHeader(selected) {
   var headerSelector = document.querySelector("header");
   headerSelector.innerHTML = `
-		<div>
-			<h1 class="season-header">Season Sale - Up to 70% Off</h1>
-		</div>
-
 		<section class="header-bar">
 			<img class="header-logo" src="${BASE_URL}/assets/images/Logo.jpg" />
 			<ul class="menu-bar">

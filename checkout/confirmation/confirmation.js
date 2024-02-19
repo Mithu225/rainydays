@@ -32,7 +32,12 @@ function renderCheckout() {
 }
 
 (async function () {
+  await checkCartDataBeforeEnter();
   await renderHeader("confirmation");
   await renderFooter();
   await renderCheckout();
 })();
+
+beforeUnload(() => {
+  setValueToStore(STORAGE_CARTS, []);
+});

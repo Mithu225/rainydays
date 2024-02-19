@@ -93,8 +93,11 @@ function generateProductDetailHTML(product, sizesHTML) {
             </button>
           </div>
         </div>
-        <div class="button-cart" onclick="onAddToCart('${product.id}')">
-          <button class="button button-dark">ADD TO CART</button>
+        <div class="button-cart">
+          <button class="button button-dark"  onclick="onAddToCart('${
+            product.id
+          }')">ADD TO CART</button>
+          <button class="button button-primary"  onclick="navigate('/checkout')">YOUR CART</button>
         </div>
         <div class="product-description">
           <p>Product details:</p>
