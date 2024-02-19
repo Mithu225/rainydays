@@ -18,7 +18,7 @@
   <body>
     <header></header>
 
-    <div class="checkout-success">
+    <div class="checkout-success container">
       <ion-icon
         class="checkout-success-icon"
         name="checkmark-circle-outline"
@@ -34,57 +34,22 @@
         <div class="order-info-left">
           <div class="orderID">
             <p class="text order">Order ID :</p>
-            <p class="text IDnumber">0000123456</p>
+            <p class="text order-number-value">Loading...</p>
           </div>
 
           <div class="orderDate">
             <p class="text order-date-text">Order Date :</p>
-            <p class="text date-number">0000123456</p>
+            <p class="text order-date-value">Loading...</p>
           </div>
         </div>
         <div class="order-info-right">
           <p class="text delivery-info">Deliver to:</p>
-          <p class="text address-ship">House no.00, Street A, City</p>
+          <p class="text address-ship">Loading...</p>
         </div>
       </div>
-      <div class="items-container">
-        <div class="items-info">
-          <div class="checkout-info-left">
-            <img
-              src="/assets/images/Checkout-success.png"
-              alt="The product checkout success"
-            />
-          </div>
-          <div class="checkout-info-center">
-            <p>BLACK M13</p>
-            <p>Size: M</p>
-            <p>Qty:1</p>
-          </div>
-          <div class="checkout-info-right">
-            <p>Total</p>
-            <p>$250</p>
-          </div>
-        </div>
-        <div class="items-info">
-          <div class="checkout-info-left">
-            <img
-              src="../../assets/images/Checkout-success.png"
-              alt="The product checkout success"
-            />
-          </div>
-          <div class="checkout-info-center">
-            <p>BLACK M13</p>
-            <p>Size: M</p>
-            <p>Qty:1</p>
-          </div>
-          <div class="checkout-info-right">
-            <p>Total</p>
-            <p>$250</p>
-          </div>
-        </div>
-      </div>
+      <div class="items-container"></div>
     </div>
-    <div class="checkout-amount">
+    <div class="checkout-amount container">
       <div class="shipping">
         <p>Shipping:</p>
         <p>$0.0</p>
@@ -92,10 +57,10 @@
       <hr size="1" width="100%" color="black" />
       <div class="total">
         <p>Total:</p>
-        <p class="total-value">$250</p>
+        <p class="total-value">0</p>
       </div>
     </div>
-    <div class="button-back">
+    <div class="button-back container">
       <button class="button button-error" onclick="navigate('/')">
         CONTINUE SHOPPING
       </button>

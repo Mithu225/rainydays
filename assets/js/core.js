@@ -3,6 +3,7 @@ var STORAGE_PRODUCTS = "products";
 var STORAGE_PRODUCTID = "productID";
 var STORAGE_CARTS = "carts";
 var STORAGE_SELECTED_PRODUCT_QUANTITY = "selectedProductQuantity";
+var STORAGE_CHECKOUT_FORM = "checkoutInfo";
 var FILTER_GENDERS = "filter:genders";
 var FILTER_CATEGORIES = "filter:categories";
 var TOAST_SELECTOR_NAME = "#toast-message";
@@ -58,9 +59,12 @@ function parseString(value) {
   }
 }
 
-function setValueToStore(key, value) {
-  store[key] = value;
-  localStorage.setItem(key, stringifyValue(value));
+async function setValueToStore(key, value) {
+  return new Promise((resolve) => {
+    store[key] = value;
+    localStorage.setItem(key, stringifyValue(value));
+    resolve(value);
+  });
 }
 
 function getValueFromStore(key) {

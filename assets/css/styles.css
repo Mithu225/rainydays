@@ -15,6 +15,12 @@ header {
   background-color: var(--color-text-light);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .season-header {
   background-color: var(--color-green-light);
   height: 6.25rem;
@@ -654,11 +660,11 @@ h3.product-detail-link {
 }
 
 .checkout-expired-date {
-  width: 70%;
+  width: 65%;
 }
 
 .checkout-cvc {
-  width: calc(30% - 2rem);
+  width: calc(35% - 2rem);
 }
 
 .checkout-success-icon {
@@ -929,23 +935,28 @@ h3.product-detail-link {
   line-height: normal;
   z-index: 1;
 }
-table {
+.your-cart-table table {
   width: 100%;
-
   flex-shrink: 0;
   opacity: 0.8;
   background-color: #fff;
+  border-collapse: collapse;
 }
 
-th {
-  border-radius: 5px;
-  border: 1px solid #c6c3c3;
+.your-cart-table th {
+  padding: 10px 10px;
+  color: white;
+  background-color: #bc6c25;
 }
-td {
+.your-cart-table td {
   border: 1px solid #c6c3c3;
   text-align: center;
   border-radius: 5px;
   padding: 1rem;
+}
+
+.your-cart-table table tfoot tr td:first-child {
+  text-align: right;
 }
 
 .bin {

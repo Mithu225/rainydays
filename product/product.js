@@ -51,16 +51,7 @@ function generateProductDetailHTML(product, sizesHTML) {
                 : ""
             }
         </p>
-        <img
-          class="selection-product"
-          src="${product.image.url}"
-          alt="${product.image.alt}"
-        />
-        <img
-          class="selection-product"
-          src="${product.image.url}"
-          alt="${product.image.url}"
-        />
+        
         <div class="text-right-detail">
           <div class="box-selection-size">
             <div class="size-list">
@@ -100,7 +91,7 @@ function generateProductDetailHTML(product, sizesHTML) {
           <button class="button button-primary"  onclick="navigate('/checkout')">YOUR CART</button>
         </div>
         <div class="product-description">
-          <p>Product details:</p>
+          <p>Description</p>
           <p class="text-description">
            ${product.description}
           </p>
