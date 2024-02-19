@@ -5,7 +5,7 @@ async function renderFooter() {
         <div class="footer-left">
           <img
             class="footer-logo"
-            src="/assets/images/Logo.jpg"
+            src="${BASE_URL}/assets/images/Logo.jpg"
             alt="Rainyday logo"
           />
           <div>

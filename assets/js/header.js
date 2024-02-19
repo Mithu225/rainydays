@@ -10,7 +10,7 @@ async function renderHeader(selected) {
 		</div>
 
 		<section class="header-bar">
-			<img src="/assets/images/Logo.jpg" />
+			<img src="${BASE_URL}/assets/images/Logo.jpg" />
 			<ul class="menu-bar">
 				<li>
 					<a class="menu-bar-item ${getSelectedClass("home", selected)}" href="/">HOME</a>
