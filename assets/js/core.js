@@ -115,6 +115,10 @@ function waitForElement(selector, rootElement) {
   });
 }
 
+function navigate(url) {
+  window.location.href = BASE_URL + url;
+}
+
 function beforeUnload(callback) {
   window.onbeforeunload = callback;
 }
