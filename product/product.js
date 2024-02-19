@@ -167,4 +167,8 @@ function onIncrease() {
   calculateQuantity(true);
 }
 
-renderHeader("product").then(renderFooter).then(renderProductDetail);
+(async function () {
+  await renderHeader("product");
+  await renderFooter();
+  await renderProductDetail();
+})();

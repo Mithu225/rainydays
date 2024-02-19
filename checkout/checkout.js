@@ -2,14 +2,14 @@ function generateYourCartHTML(data) {
   var cartSelector = document.querySelector("table");
 
   if (!data.length) {
-    cartSelector.innerHTML = `<div>Your cart is empty</div>`;
+    cartSelector.innerHTML = `<div class="cart-empty">Your cart is empty</div>`;
     return;
   }
 
   var html = data.map(
     (item) => `<tr class="cart-info-row">
             <td>
-              <ion-icon class="bin md icon-large hydrated" size="large" name="trash-bin" role="img" onclick="onRemoveItem('${
+              <ion-icon class="bin md icon-large hydrated remove-icon" size="large" name="trash-bin" role="img" onclick="onRemoveItem('${
                 item.id
               }')"></ion-icon>
             </td>
@@ -69,9 +69,13 @@ function onRemoveItem(productID) {
   updateCartNumber();
 }
 
-function renderYourCart() {
+function renderCheckout() {
   var data = getValueFromStore(STORAGE_CARTS);
   generateYourCartHTML(data);
 }
 
-renderHeader().then(renderFooter).then(renderYourCart);
+(async function () {
+  await renderHeader("checkout");
+  await renderFooter();
+  await renderCheckout();
+})();

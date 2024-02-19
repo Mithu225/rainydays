@@ -1,7 +1,7 @@
 async function renderFooter() {
   var footerSelector = document.querySelector("footer");
   footerSelector.innerHTML = `
-		<div class="footer-bar">
+			<div class="footer-bar">
         <div class="footer-left">
           <img
             class="footer-logo"
@@ -84,10 +84,5 @@ async function renderFooter() {
       </div>
   `;
 
-  return retry(1000, 10, (finish) => {
-    var footerSelector = document.querySelector("footer > div");
-    if (footerSelector) {
-      finish();
-    }
-  });
+  return waitForElement(".footer-bar", footerSelector);
 }

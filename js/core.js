@@ -69,58 +69,56 @@ function getValuesUniqued(values) {
   return valuesUniqued;
 }
 
-function updateCartNumber() {
-  retry(1000, 5, (finish) => {
-    var carts = getValueFromStore(STORAGE_CARTS);
-    var cartHeaderSelector = document.querySelector(CART_HEADER_SELECTOR_NAME);
+async function updateCartNumber() {
+  var carts = getValueFromStore(STORAGE_CARTS);
+  var cartHeaderSelector = document.querySelector(CART_HEADER_SELECTOR_NAME);
 
-    if (!carts || !carts.length) {
-      cartHeaderSelector.className = "hide";
-      return;
-    } else {
-      cartHeaderSelector.className = "show";
-    }
+  if (!cartHeaderSelector) {
+    return;
+  }
 
-    var cartLength = carts
-      .map((item) => item.quantity)
-      .reduce((prev, cur) => prev + cur, 0);
+  if (!carts || !carts.length) {
+    cartHeaderSelector.className = "hide";
+    return;
+  } else {
+    cartHeaderSelector.className = "show";
+  }
 
-    cartHeaderSelector.innerHTML = `<div class="your-cart-number">${cartLength}</div>`;
-    finish();
-  });
+  var cartLength = carts
+    .map((item) => item.quantity)
+    .reduce((prev, cur) => prev + cur, 0);
+
+  cartHeaderSelector.innerHTML = `<div class="your-cart-number">${cartLength}</div>`;
 }
 
 function beforeUnload(callback) {
   window.onbeforeunload = callback;
 }
 
-async function retry(ms, limit, cb) {
-  var _timer = 0;
+function waitForElement(selector, rootElement) {
   return new Promise((resolve) => {
-    var internal = setInterval(() => {
-      if (_timer > limit) {
-        clearInterval(internal);
-        return;
+    const observer = new MutationObserver(() => {
+      const element = document.querySelector(selector);
+      if (element) {
+        observer.disconnect();
+        resolve(element);
       }
+    });
 
-      cb(() => {
-        clearInterval(internal);
-        resolve();
-      });
-      _timer = _timer + 1;
-    }, ms);
+    observer.observe(rootElement, {
+      childList: true,
+      subtree: true,
+      attributeOldValue: true,
+    });
   });
 }
 
-function init() {
+(function () {
   renderLoading(true);
   document.onreadystatechange = () => {
     if (document.readyState === "complete") {
       renderLoading(false);
+      updateCartNumber();
     }
   };
-
-  updateCartNumber();
-}
-
-init();
+})();

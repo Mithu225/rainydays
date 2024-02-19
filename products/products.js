@@ -18,7 +18,9 @@ async function renderProducts(data) {
   topProductListSelector.innerHTML = datamap.join("");
 }
 
-renderHeader("products")
-  .then(renderFooter)
-  .then(renderFilter(renderProducts))
-  .then(renderProducts);
+(async function () {
+  await renderHeader("products");
+  await renderFooter();
+  await renderFilter(renderProducts);
+  await renderProducts();
+})();

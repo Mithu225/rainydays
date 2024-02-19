@@ -1,1 +1,4 @@
-renderHeader().then(renderFooter);
+(async function () {
+  await renderHeader();
+  await renderFooter();
+})();

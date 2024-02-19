@@ -44,11 +44,5 @@ async function renderHeader(selected) {
 			</div>
 		</section>
   `;
-
-  return retry(1000, 10, (finish) => {
-    var headerSelector = document.querySelector("header > div");
-    if (headerSelector) {
-      finish();
-    }
-  });
+  return waitForElement(".header-bar", headerSelector);
 }

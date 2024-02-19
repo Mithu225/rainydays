@@ -1245,10 +1245,20 @@ td {
   padding-right: 1rem;
 }
 
-.hide {
+.show {
+  display: block !important;
+}
+
+.remove-icon {
+  cursor: pointer;
+}
+
+#your-cart-number {
   display: none;
 }
 
-.show {
-  display: block;
+.cart-empty {
+  text-align: center;
+  padding: 19px;
+  font-size: 2rem;
 }

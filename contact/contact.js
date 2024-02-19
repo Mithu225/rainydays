@@ -1,1 +1,4 @@
-renderHeader("contact").then(renderFooter);
+(async function () {
+  await renderHeader("contact");
+  await renderFooter();
+})();

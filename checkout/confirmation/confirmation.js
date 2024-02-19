@@ -31,4 +31,8 @@ function renderCheckout() {
   checkoutSelector.innerHTML = total.toLocaleString();
 }
 
-renderHeader().then(renderFooter).then(renderCheckout);
+(async function () {
+  await renderHeader("confirmation");
+  await renderFooter();
+  await renderCheckout();
+})();
