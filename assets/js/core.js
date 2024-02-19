@@ -7,9 +7,16 @@ var FILTER_GENDERS = "filter:genders";
 var FILTER_CATEGORIES = "filter:categories";
 var TOAST_SELECTOR_NAME = "#toast-message";
 var CART_HEADER_SELECTOR_NAME = "#your-cart-number";
-var BASE_URL = "https://mithu225.github.io/javascript1-THI-MINH-THU-HUYNH";
 var bodySelector = document.querySelector("body");
 var store = {};
+
+var BASE_URL = isLocalhost
+  ? ""
+  : "https://mithu225.github.io/javascript1-THI-MINH-THU-HUYNH";
+
+function isLocalhost() {
+  return location.hostname === "localhost" || location.hostname === "127.0.0.1";
+}
 
 function renderLoading(isLoading) {
   if (isLoading) {

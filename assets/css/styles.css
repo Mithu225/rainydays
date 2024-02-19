@@ -787,7 +787,7 @@ h3.product-detail-link {
 }
 /* subscribe page */
 .subscribe-success {
-  background-image: url("../assets/images/Subscribed.jpg");
+  background-image: url("../images/Subscribed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -818,7 +818,7 @@ h3.product-detail-link {
 
 /* submission */
 .submission {
-  background-image: url("../assets/images/Submission.jpg");
+  background-image: url("../images/Submission.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -855,7 +855,7 @@ h3.product-detail-link {
 }
 /* add to cart */
 .add-cart {
-  background-image: url("../assets/images/add-to-cart.jpg");
+  background-image: url("../images/add-to-cart.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -898,7 +898,7 @@ h3.product-detail-link {
 /* your cart page */
 .your-cart {
   position: relative;
-  background-image: url("../assets/images/your-cart.webp");
+  background-image: url("../images/your-cart.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -951,7 +951,7 @@ td {
 
 /* about */
 .about {
-  background-image: url("../assets/images/About-us.jpg");
+  background-image: url("../images/About-us.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
