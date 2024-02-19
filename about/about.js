@@ -1,0 +1,1 @@
+renderHeader("about").then(renderFooter);

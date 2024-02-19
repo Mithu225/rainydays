@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The checkout proceed success" />
+    <title>Rainyday | Checkout success</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+
+    <div class="checkout-success">
+      <ion-icon
+        class="checkout-success-icon"
+        name="checkmark-circle-outline"
+      ></ion-icon>
+      <h2 class="thanks-text">Thank you for your purchase!</h2>
+      <p class="checkout-message">
+        You will receive an order confirmation email with details of your order
+        and a link to track its progress
+      </p>
+    </div>
+    <div>
+      <div class="order-info">
+        <div class="order-info-left">
+          <div class="orderID">
+            <p class="text order">Order ID :</p>
+            <p class="text IDnumber">0000123456</p>
+          </div>
+
+          <div class="orderDate">
+            <p class="text order-date-text">Order Date :</p>
+            <p class="text date-number">0000123456</p>
+          </div>
+        </div>
+        <div class="order-info-right">
+          <p class="text delivery-info">Deliver to:</p>
+          <p class="text address-ship">House no.00, Street A, City</p>
+        </div>
+      </div>
+      <div class="items-container">
+        <div class="items-info">
+          <div class="checkout-info-left">
+            <img
+              src="/assets/images/Checkout-success.png"
+              alt="The product checkout success"
+            />
+          </div>
+          <div class="checkout-info-center">
+            <p>BLACK M13</p>
+            <p>Size: M</p>
+            <p>Qty:1</p>
+          </div>
+          <div class="checkout-info-right">
+            <p>Total</p>
+            <p>$250</p>
+          </div>
+        </div>
+        <div class="items-info">
+          <div class="checkout-info-left">
+            <img
+              src="/assets/images/Checkout-success.png"
+              alt="The product checkout success"
+            />
+          </div>
+          <div class="checkout-info-center">
+            <p>BLACK M13</p>
+            <p>Size: M</p>
+            <p>Qty:1</p>
+          </div>
+          <div class="checkout-info-right">
+            <p>Total</p>
+            <p>$250</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-amount">
+      <div class="shipping">
+        <p>Shipping:</p>
+        <p>$0.0</p>
+      </div>
+      <hr size="1" width="100%" color="black" />
+      <div class="total">
+        <p>Total:</p>
+        <p class="total-value">$250</p>
+      </div>
+    </div>
+    <div class="button-back">
+      <a href="/"
+        ><button class="button button-error">CONTINUE SHOPPING</button></a
+      >
+    </div>
+
+    <footer></footer>
+    <script src="/js/core.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/checkout/confirmation/confirmation.js"></script>
+  </body>
+</html>

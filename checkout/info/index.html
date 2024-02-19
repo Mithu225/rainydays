@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the status for checkout process"
+    />
+    <title>Rainyday | Checkout</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <div class="breadcrumb">
+      <h3 class="product-detail-link">HOME / CHECKOUT</h3>
+    </div>
+    <div class="checkout-info">
+      <form class="checkout-form">
+        <div class="checkout-container-left">
+          <h2 class="billing">Billing Details</h2>
+          <div class="checkout-content">
+            <div class="checkout-form-item">
+              <label for="fname">First name</label>
+              <input type="text" id="fname" name="fname" />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="lname">Last name</label>
+              <input type="text" id="lname" name="lname" />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="1234567890"
+              />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address" />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" />
+            </div>
+
+            <div class="checkout-form-item">
+              <label for="postal-code">Postal code</label>
+              <input type="number" id="postal-code" name="postal-code" />
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-container-right">
+          <p class="payment">Payment Method</p>
+          <div class="checkout-content">
+            <div class="img-card">
+              <img src="/assets/images/Payment-visa.jpg" alt="Visa card" />
+              <img src="/assets/images/Payment-master.jpg" alt="Master card" />
+            </div>
+
+            <div class="checkout-content">
+              <label for="card-number">Card Number</label>
+              <input type="number" id="card-number" name="card-number" />
+            </div>
+
+            <div class="checkout-content">
+              <label for="name-card">Name on Card</label>
+              <input type="text" id="name-card" name="name-card" />
+            </div>
+            <div class="checkout-content checkout-expired-date">
+              <label for="expired">Expired Date</label>
+              <input
+                type="month"
+                id="expired"
+                name="expired"
+                placeholder="MM/YY"
+              />
+            </div>
+            <div class="checkout-content checkout-cvc">
+              <label for="cvc">CVC</label>
+              <input type="number" id="cvc" name="cvc" placeholder="123" />
+            </div>
+          </div>
+        </div>
+
+        <div class="checkout-purchase">
+          <a href="index.html">
+            <button type="button" class="button button-error">
+              CONTINUE SHOPPING
+            </button></a
+          >
+          <a href="/checkout/confirmation"
+            ><button type="button" class="button button-dark">
+              PURCHASE
+            </button></a
+          >
+        </div>
+      </form>
+    </div>
+    <footer></footer>
+    <script src="/js/core.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/checkout/info/info.js"></script>
+  </body>
+</html>

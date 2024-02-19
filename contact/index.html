@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with the website's administrators, owners, or customer support team"
+    />
+    <title>Rainyday | Contact</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header></header>
+    <div>
+      <img
+        class="contact-banner"
+        src="/assets/images/Contact.jpg"
+        alt="Contact information"
+      />
+    </div>
+    <div class="submission-form">
+      <form class="contact-form-info">
+        <h2 class="text form-title">Send Message</h2>
+        <div class="form-input-container-column contact-form">
+          <div class="form-input-item">
+            <label for="email">Username or Email</label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="form-input-item">
+            <label for="phone">Phone</label>
+            <input placeholder="1234567890" id="phone" name="phone" />
+          </div>
+
+          <div class="form-input-item">
+            <label for="message">Type your message</label>
+            <textarea
+              aria-label="message"
+              rows="10"
+              cols="45"
+              name="comment"
+              form="userform"
+              id="message"
+            ></textarea>
+          </div>
+
+          <div class="button-send-message">
+            <a href="/submission"
+              ><button type="button" class="button button-primary">
+                Send
+              </button></a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer></footer>
+    <script src="/js/core.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/contact/contact.js"></script>
+  </body>
+</html>
