@@ -1262,3 +1262,8 @@ td {
   padding: 19px;
   font-size: 2rem;
 }
+
+.no-result {
+  padding: 5rem;
+  font-size: larger;
+}

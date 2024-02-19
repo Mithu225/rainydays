@@ -9,13 +9,18 @@ async function renderProducts(data) {
     setFilterValues(products);
   }
 
-  var datamap = products.map((item) => {
-    var sizesGenerateHTML = generateProductSizesHTML(item.sizes);
-    return generateProductItemHTML(item, sizesGenerateHTML);
-  });
-
   var topProductListSelector = document.querySelector(".product-list");
-  topProductListSelector.innerHTML = datamap.join("");
+
+  if (products.length) {
+    var datamap = products.map((item) => {
+      var sizesGenerateHTML = generateProductSizesHTML(item.sizes);
+      return generateProductItemHTML(item, sizesGenerateHTML);
+    });
+
+    topProductListSelector.innerHTML = datamap.join("");
+  } else {
+    topProductListSelector.innerHTML = `<div class="no-result">No result</div>`;
+  }
 }
 
 (async function () {

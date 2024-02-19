@@ -91,10 +91,6 @@ async function updateCartNumber() {
   cartHeaderSelector.innerHTML = `<div class="your-cart-number">${cartLength}</div>`;
 }
 
-function beforeUnload(callback) {
-  window.onbeforeunload = callback;
-}
-
 function waitForElement(selector, rootElement) {
   return new Promise((resolve) => {
     const observer = new MutationObserver(() => {
@@ -111,6 +107,10 @@ function waitForElement(selector, rootElement) {
       attributeOldValue: true,
     });
   });
+}
+
+function beforeUnload(callback) {
+  window.onbeforeunload = callback;
 }
 
 (function () {
