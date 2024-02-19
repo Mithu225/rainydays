@@ -43,5 +43,5 @@ function generateProductItemHTML(product, sizeHTML) {
 
 function onSelectProduct(id) {
   setValueToStore(STORAGE_PRODUCTID, id);
-  window.location.href = "/product";
+  window.location.href = BASE_URL + "/product";
 }

@@ -19,25 +19,25 @@ async function renderHeader(selected) {
 					<a class="menu-bar-item ${getSelectedClass(
             "products",
             selected
-          )}" href="/products">PRODUCTS</a
+          )}" href="${BASE_URL}/products">PRODUCTS</a
 					>
 				</li>
 				<li><a class="menu-bar-item ${getSelectedClass(
           "about",
           selected
-        )}" href="/about">ABOUT</a></li>
+        )}" href="${BASE_URL}/about">ABOUT</a></li>
 				<li>
 					<a class="menu-bar-item ${getSelectedClass(
             "contact",
             selected
-          )}" href="/contact">CONTACT</a>
+          )}" href="${BASE_URL}/contact">CONTACT</a>
 				</li>
 			</ul>
 			<div class="menu-icon">
-				<a href="/login" aria-label="login">
+				<a href="${BASE_URL}/login" aria-label="login">
 					<ion-icon size="large" name="person-circle-outline"></ion-icon>
 				</a>
-				<a href="/checkout" aria-label="your cart">
+				<a href="${BASE_URL}/checkout" aria-label="your cart">
 					<ion-icon size="large" name="cart"></ion-icon>
 					<div id="your-cart-number"></div>
 				</a>

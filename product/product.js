@@ -114,7 +114,7 @@ async function renderProductDetail() {
   var productID = getValueFromStore(STORAGE_PRODUCTID);
 
   if (productID == undefined) {
-    window.location.href = "/error.html";
+    window.location.href = BASE_URL + "/error.html";
     return;
   }
 

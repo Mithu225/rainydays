@@ -25,7 +25,7 @@ async function renderFooter() {
         <div class="footer-right">
           <div class="footer-right-subscribe">
             <div class="email-subscribe">
-              <form action="/login" class="footer-subscribe">
+              <form action="${BASE_URL}/login" class="footer-subscribe">
                 <input
                   aria-label="email"
                   type="email"
@@ -35,16 +35,16 @@ async function renderFooter() {
                 />
               </form>
             </div>
-            <a class="button button-error" href="/subscribed">SUBSCRIBE</a>
+            <a class="button button-error" href="${BASE_URL}/subscribed">SUBSCRIBE</a>
           </div>
           <div class="footer-link-store">
             <div class="footer-right-shop">
               <p class="footer-shop">SHOP</p>
               <div class="footer-shop-details">
-                <a href="/products">
+                <a href="${BASE_URL}/products">
                   <p>Mens</p>
                 </a>
-                <a href="/product">
+                <a href="${BASE_URL}/product">
                   <p>Womens</p>
                 </a>
               </div>
@@ -54,8 +54,8 @@ async function renderFooter() {
               <div class="footer-help-details">
                 <a href="#"><p>Shipping & Return</p></a>
                 <a href="#"><p>Customer service</p></a>
-                <a href="/about"><p>About us</p></a>
-                <a href="/contact"><p>Contacts</p></a>
+                <a href="${BASE_URL}/about"><p>About us</p></a>
+                <a href="${BASE_URL}/contact"><p>Contacts</p></a>
               </div>
             </div>
             <div class="footer-right-info">
