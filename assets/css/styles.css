@@ -417,6 +417,7 @@ h3.product-detail-link {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-transform: uppercase;
 }
 
 .box-product-detail-left {

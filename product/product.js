@@ -123,10 +123,10 @@ async function renderProductDetail() {
   var productListSelector = document.querySelector(".product-detail");
   productListSelector.innerHTML = datamap;
 
-  function generateProductTitleHTML(title) {
-    return `<h3 class="product-detail-link">PRODUCT / MEN / ${title}</h3>`;
+  function generateProductTitleHTML(category, title) {
+    return `<h3 class="product-detail-link">PRODUCT / ${category} / ${title}</h3>`;
   }
-  var datatitle = generateProductTitleHTML(product.title);
+  var datatitle = generateProductTitleHTML(product.tags[1], product.title);
   var productTitleSelector = document.querySelector(".breadcrumb");
   productTitleSelector.innerHTML = datatitle;
 }
