@@ -1,0 +1,28 @@
+/* Use this file to store your useful variables */
+/* This could be colors, fonts, or padding sizes! */
+
+:root {
+  --color-primary: #235e7b;
+  --color-error: #b30f00;
+  --color-warning: #ffa500;
+  --color-dark: #212529;
+
+  --color-btn-primary: #235e7b;
+  --color-text-light: #ffffff;
+  --color-text-dark: #000000;
+  --color-text-gray: #514d4d;
+  --color-text-footer: #e8ebe9;
+  --color-text-sub: #b30f00;
+  --color-icon-product: #ffa500;
+  --color-link-bar: #f0f1f3;
+  --color-size: #fffbfb;
+  --color-size-xxl: #e6e0e0;
+  --color-button-checkout: #e1dbdb;
+  --color-checkout-items: #c6f5ff;
+  --color-sub-thanks: #b6aba5;
+  --color-submission: #555252;
+  --color-slogan: #fcf7f7;
+  --color-button-send: #235e7b;
+  --color-border-light: #d2d2d2;
+  --color-green-light: #3d604e;
+}
