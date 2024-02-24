@@ -34,7 +34,7 @@ async function onPurchase() {
     getFormValues();
   });
 
-  if (validateForm()) {
+  if (!validateForm()) {
     navigate("/checkout/confirmation");
   }
 }

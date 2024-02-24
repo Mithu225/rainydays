@@ -17,13 +17,13 @@ function generateYourCartHTML(data) {
           <p>${item.title}</p>
         </td>
         <td><span class='${item.onSale ? "product-price-old" : ""}'>
-      ${item.price}
+      ${item.price} NOK
     </span>
     ${item.onSale ? "<span>" + item.discountedPrice + "</span>" : ""}</td>
         <td>${item.quantity}</td>
         <td>${(
           (item.onSale ? item.discountedPrice : item.price) * item.quantity
-        ).toLocaleString()}
+        ).toLocaleString()} NOK
         <ion-icon class="bin md icon-large hydrated remove-icon" size="large" name="trash-bin" role="img" onclick="onRemoveItem('${
           item.id
         }')"></ion-icon>
@@ -55,7 +55,7 @@ function generateYourCartHTML(data) {
     <tfoot>
       <tr>
         <td colspan="3">Total:</td>
-        <td class="yourcart-total-value">${total.toLocaleString()}</td>
+        <td class="yourcart-total-value">${total.toLocaleString()} NOK</td>
       </tr>
     </tfoot>
     

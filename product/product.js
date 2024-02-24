@@ -43,11 +43,11 @@ function generateProductDetailHTML(product, sizesHTML) {
         <h2 class="product-text-detail">${product.title}</h2>
         <p class="product-price">
             <span class='${product.onSale ? "product-price-old" : ""}'>
-                ${product.price}
+                ${product.price} NOK
             </span>
             ${
               product.onSale
-                ? "<span>" + product.discountedPrice + "</span>"
+                ? "<span>" + product.discountedPrice + " NOK</span>"
                 : ""
             }
         </p>

@@ -28,7 +28,7 @@ function renderCheckout() {
           <p>Total</p>
           <p>${(
             (item.onSale ? item.discountedPrice : item.price) * item.quantity
-          ).toLocaleString()}</p>
+          ).toLocaleString()} NOK</p>
         </div></div>
         `
   );

@@ -33,9 +33,13 @@ function generateProductItemHTML(product, sizeHTML) {
       <p class="product-name">${product.title}</p>
       <p class="product-price">
         <span class='${product.onSale ? "product-price-old" : ""}'>
-          ${product.price}
+          ${product.price} NOK
         </span>
-        ${product.onSale ? "<span>" + product.discountedPrice + "</span>" : ""}
+        ${
+          product.onSale
+            ? "<span>" + product.discountedPrice + " NOK </span>"
+            : ""
+        }
       </p>
       <div class="collection-procduct-color">
         <div class="size-list">
