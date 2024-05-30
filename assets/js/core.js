@@ -16,7 +16,7 @@ var isLocalhost =
 
 var BASE_URL = isLocalhost
   ? ""
-  : "https://mithu225.github.io/javascript1-THI-MINH-THU-HUYNH";
+  : "https://rainydays.thuhuynh.no";
 
 function renderLoading(isLoading) {
   if (isLoading) {
