@@ -29,9 +29,9 @@ This is where you list how to get the project started. It typically just include
 
 1. Clone the repo:
 
-
+```
 git@github.com:Mithu225/rainydays.git
-
+```
 
 2. Install the dependencies:
 
@@ -55,7 +55,7 @@ I'm reaching out to discuss the possibility of you contributing to Rainydays's w
 
 Contributing to my website offers several benefits, including exposure to a relevant audience, opportunities for collaboration, and the chance to showcase your expertise .
 
-If you're interested in learning more or discussing this opportunity further, I would love to connect with you. Please feel free to send me directly at email: [hi@thuhuynh.no]
+If you're interested in learning more or discussing this opportunity further, I would love to connect with you. Please feel free to send me directly at [Email](mailto:hi@thuhuynh.no
 
 ## Contact
 
@@ -65,7 +65,7 @@ If you're interested in learning more or discussing this opportunity further, I 
 
 ## Live pages:
 
--[https://rainydays.thuhuynh.no/](https://rainydays.thuhuynh.no/)
+- [https://rainydays.thuhuynh.no/](https://rainydays.thuhuynh.no/)
 
 
 
