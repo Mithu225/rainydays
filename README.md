@@ -1,4 +1,4 @@
-# Javascript 1 Course Assignment - Rainy-day online shopping
+# Course Assignment - Rainydays online shopping
 
 
 <img width="1420" alt="Rainyday-online-shop" src="https://github.com/Mithu225/rainydays/assets/145982119/7b78b0b5-a716-4766-86aa-eaae4281e3b3">
@@ -55,7 +55,7 @@ I'm reaching out to discuss the possibility of you contributing to Rainydays's w
 
 Contributing to my website offers several benefits, including exposure to a relevant audience, opportunities for collaboration, and the chance to showcase your expertise .
 
-If you're interested in learning more or discussing this opportunity further, I would love to connect with you. Please feel free to send me directly at [Email](mailto:hi@thuhuynh.no
+I would love to get in touch with you if you would like to talk more about this opportunity or acquire additional information. Please use the contact information below to send me a direct message.
 
 ## Contact
 
