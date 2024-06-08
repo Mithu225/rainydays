@@ -5,11 +5,11 @@
 
 
 ## Description
-Welcome to Rainy Day Jacket, I was given the amazing chance to create Rain Jacket Haven, an immersive online store that aims to elevate rain gear. I was able to combine my passion for user-centered design with my love of web development with this project.
+Welcome to Rainy Days Jacket, I was given the amazing chance to create Rain jacket haven, an immersive online store that aims to elevate rain gear. I was able to combine my passion for user-centered design with my love of web development with this project.
 
 - **Home page**:Beautiful pictures of people engaging in a variety of outdoor activities in the rain while remaining dry and fashionable in their rain jackets greet visitors to RainyDays Jacket 's homepage. It is intended to be aesthetically pleasing and welcoming, effectively communicating the brand's core message—embracing the rain with confidence and style.
   
-- **Product Showcase**: The heart of Rain Jacket Haven lies in its product showcase. Here, users can browse through a carefully curated collection of rain jackets from top brands around the world. Each product is accompanied by detailed descriptions, high-resolution images, and perhaps even videos showcasing its features and functionality. Users can easily filter the products based on criteria such as brand, price, style, and waterproof rating to find the perfect jacket for their needs.
+- **Product Showcase**: The heart of Rain Jacket haven lies in its product showcase. Here, users can browse through a carefully curated collection of rain jackets from top brands around the world. Each product is accompanied by detailed descriptions, high-resolution images, and perhaps even videos showcasing its features and functionality. Users can easily filter the products based on criteria such as brand, price, style, and waterproof rating to find the perfect jacket for their needs.
   
 -**Responsive Design**: Whether users are browsing Rain Jacket Haven on their desktop computers, tablets, or smartphones, the website is optimized for seamless viewing and navigation across all devices. The responsive design ensures that users can shop for their favorite rain jackets anytime, anywhere, without sacrificing the user experience.
 
